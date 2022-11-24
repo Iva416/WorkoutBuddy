@@ -10,9 +10,9 @@ export const QUERY_EXERCISES = gql`
 `;
 
 export const QUERY_FOOD = gql`
-  query getCheckout($products: [ID]!) {
-    checkout(products: $products) {
-      session
+  {
+    food {
+      food_name
     }
   }
 `;
