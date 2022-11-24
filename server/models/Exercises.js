@@ -9,9 +9,6 @@ const exerciseSchema = new Schema({
   description: {
     type: String,
   },
-  start: {
-    type: String,
-  },
   time : { 
     type : Date, 
     default: Date.now },

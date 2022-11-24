@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import mobiscroll from '@mobiscroll/react-lite';
 import { Eventcalendar, getJson, toast } from '@mobiscroll/react';
 
