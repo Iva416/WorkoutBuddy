@@ -1,17 +1,22 @@
 import React from "react";
 import "../styles/WorkoutPage.css"; //change path
-import //exercise
+import { useQuery } from '@apollo/client';
+
+import { QUERY_EXERCISES } from '../utils/queries';
 
 export default function Workout() {
+    
+    const { loading, data } = useQuery(QUERY_EXERCISES);
+
   return (
     <div>
       <h1>Workouts</h1>
       <label>Which muscle group are you targeting?</label>
-      <select name="exercises" onChange={handleInputChange}>
-        {exerciseList.map((exercise) => {
+      <select name="exercises">
+        {data.map((exercise) => {
           return (
             <option>
-              {exercise.name}
+              {data.muscle_group}
             </option>
           );
         })}

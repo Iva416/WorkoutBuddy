@@ -1,36 +1,37 @@
 [
     {
-      "name": "JavaScript"
+      "exercise_name": "JavaScript",
+      "muscle_group": "legs"
     },
     {
-      "name": "HTML"
+      "exercise_name": "HTML"
     },
     {
-      "name": "CSS"
+      "exercise_name": "CSS"
     },
     {
-      "name": "Node.js"
+      "exercise_name": "Node.js"
     },
     {
-      "name": "Express.js"
+      "exercise_name": "Express.js"
     },
     {
-      "name": "MySQL"
+      "exercise_name": "MySQL"
     },
     {
-      "name": "MongoDB"
+      "exercise_name": "MongoDB"
     },
     {
-      "name": "React"
+      "exercise_name": "React"
     },
     {
-      "name": "GraphQL"
+      "exercise_name": "GraphQL"
     },
     {
-      "name": "Sequelize"
+      "exercise_name": "Sequelize"
     },
     {
-      "name": "Handlebars.js"
+      "exercise_name": "Handlebars.js"
     }
   ]
   
