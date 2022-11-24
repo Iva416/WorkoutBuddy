@@ -5,13 +5,11 @@ const exerciseSchema = new Schema({
     type: String,
     minlength: 1,
     maxlength: 50,
-    trim: true,
   },
   muscle_group: {
     type: String,
     minlength: 1,
     maxlength: 50,
-    trim: true,
   },
 });
 
