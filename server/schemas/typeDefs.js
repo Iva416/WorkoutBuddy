@@ -15,10 +15,10 @@ const typeDefs = gql`
     time: Int
   }
 
-  type :  User {
+  type User: {
     name: String!
     minlength: Int
-    maxlength: Int
+    _id: ID
   }
 
   type Workout:  {

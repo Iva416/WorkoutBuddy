@@ -1,0 +1,37 @@
+[
+    {
+      "exercise_name": "JavaScript",
+      "muscle_group": "legs"
+    },
+    {
+      "exercise_name": "HTML"
+    },
+    {
+      "exercise_name": "CSS"
+    },
+    {
+      "exercise_name": "Node.js"
+    },
+    {
+      "exercise_name": "Express.js"
+    },
+    {
+      "exercise_name": "MySQL"
+    },
+    {
+      "exercise_name": "MongoDB"
+    },
+    {
+      "exercise_name": "React"
+    },
+    {
+      "exercise_name": "GraphQL"
+    },
+    {
+      "exercise_name": "Sequelize"
+    },
+    {
+      "exercise_name": "Handlebars.js"
+    }
+  ]
+  
