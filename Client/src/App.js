@@ -1,14 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+// import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import {
-  ApolloClient,
-  InMemoryCache,
-  ApolloProvider,
-  createHttpLink,
-} from '@apollo/client';
-import { setContext } from '@apollo/client/link/context';
+// import {
+//   ApolloClient,
+//   InMemoryCache,
+//   ApolloProvider,
+//   createHttpLink,
+// } from '@apollo/client';
+// import { setContext } from '@apollo/client/link/context';
 
 import Home from './components/pages/Home';
 import Login from './components/pages/Login';
@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <ApolloProvider client={client}>
+        {/* <ApolloProvider client={client}> */}
           <Router>
             <div>
               <HomeContainer>
@@ -38,10 +38,18 @@ function App() {
               </HomeContainer>
             </div>
           </Router>
-        </ApolloProvider>
+        {/* </ApolloProvider> */}
       </header>
     </div>
   );
 }
 
 export default App;
+
+
+// import React from "react";
+// import Homepage from "./components/HomeContainer";
+
+// const App = () => <HomeContainer />;
+
+// export default App;
