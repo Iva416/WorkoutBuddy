@@ -15,7 +15,7 @@ import Login from './components/pages/Login';
 // import MyCalendar from './components/pages/MyCalendar';
 import Food from './components/pages/Food';
 import Workout from './components/pages/Workout';
-import HomeContainer from './components/HomeContainer';
+// import HomeContainer from './components/HomeContainer';
 import NavTabs from './components/NavTabs';
 
 const client = new ApolloClient({
@@ -30,15 +30,15 @@ function App() {
         <ApolloProvider client={client}>
           <Router>
             <div>
-                <NavTabs />
-                <Routes>
-                  <Route path="/" element={<Home />} />
-                  {/* <Route path="/login" element={<Login />} /> */}
-                  {/* <Route path="/calendar" element={<Calendar />} /> */}
-                  <Route path="/workout" element={<Workout />} />
-                  <Route path="/food" element={<Food />} />
-                  {/* <Route path="*" element={<NoMatch />} /> */}
-                </Routes>
+              <NavTabs />
+              <Routes>
+                <Route path="/" element={<Home />} />
+                {/* <Route path="/login" element={<Login />} /> */}
+                {/* <Route path="/calendar" element={<Calendar />} /> */}
+                <Route path="/workout" element={<Workout />} />
+                {/* <Route path="/food" element={<Food />} /> */}
+                {/* <Route path="*" element={<NoMatch />} /> */}
+              </Routes>
             </div>
           </Router>
         </ApolloProvider>

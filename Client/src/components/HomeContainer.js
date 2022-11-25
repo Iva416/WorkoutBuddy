@@ -19,7 +19,7 @@ export default function HomeContainer() {
     if (currentPage === 'Workout') {
       return <Workout />;
     }
-    return <Food />;
+    // return <Food />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
