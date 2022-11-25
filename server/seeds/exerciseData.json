@@ -1,0 +1,74 @@
+[
+  {
+    "muscle_group": "Legs",
+    "exercises": [
+      { "exercise_name": "Deadlift", "source": "whatever" },
+      { "exercise_name": "Barbell Squat", "source": "whatever" },
+      { "exercise_name": "Leg Press", "source": "whatever" },
+      { "exercise_name": "Barbell RDLs", "source": "whatever" },
+      { "exercise_name": "Bulgarian Split Squats", "source": "whatever" },
+      { "exercise_name": "Leg Extension", "source": "whatever" },
+      { "exercise_name": "Hamstring Curl", "source": "whatever" }
+    ]
+  },
+  {
+    "muscle_group": "Back",
+    "exercises": [
+      { "exercise_name": "Lat Pull Downs", "source": "whatever" },
+      { "exercise_name": "Cable Rows", "source": "whatever" },
+      { "exercise_name": "Barbell Row", "source": "whatever" },
+      { "exercise_name": "Straight Arm Pulldown", "source": "whatever" },
+      { "exercise_name": "Face Pulls", "source": "whatever" },
+      { "exercise_name": "Single Arm Dumbbell Rows", "source": "whatever" },
+      { "exercise_name": "(Assisted) Pull Ups", "source": "whatever" }
+    ]
+  },
+  {
+    "muscle_group": "Arms",
+    "exercises": [
+      { "exercise_name": "Dumbbell Bicep Curls", "source": "whatever" },
+      { "exercise_name": "Barbell Bicep Curls", "source": "whatever" },
+      { "exercise_name": "Cable Tricep Pushdown", "source": "whatever" },
+      { "exercise_name": "Skullcrushers", "source": "whatever" },
+      { "exercise_name": "Dumbbell Tricep Extension", "source": "whatever" },
+      { "exercise_name": "Cable Bicep Curls", "source": "whatever" },
+      { "exercise_name": "(Assisted) Tricep Dips", "source": "whatever" }
+    ]
+  },
+  {
+    "muscle_group": "Shoulders",
+    "exercises": [
+      { "exercise_name": "Barbell Overhead Press", "source": "whatever" },
+      { "exercise_name": "Dumbbell Overhead Press", "source": "whatever" },
+      { "exercise_name": "Lateral Raises", "source": "whatever" },
+      { "exercise_name": "Front Raises", "source": "whatever" },
+      { "exercise_name": "Barbell Upright Row", "source": "whatever" },
+      { "exercise_name": "Arnold Press", "source": "whatever" },
+      { "exercise_name": "Rear Delt Fly", "source": "whatever" }
+    ]
+  },
+  {
+    "muscle_group": "Chest",
+    "exercises": [
+      { "exercise_name": "Bench Press", "source": "whatever" },
+      { "exercise_name": "Incline Bench Press", "source": "whatever" },
+      { "exercise_name": "Decline Bench Press", "source": "whatever" },
+      { "exercise_name": "Dumbbell Press", "source": "whatever" },
+      { "exercise_name": "Incline Dumbbell Press", "source": "whatever" },
+      { "exercise_name": "Push Ups", "source": "whatever" },
+      { "exercise_name": "Cable Pec Fly", "source": "whatever" }
+    ]
+  },
+  {
+    "muscle_group": "Abs",
+    "exercises": [
+      { "exercise_name": "Sit Ups", "source": "whatever" },
+      { "exercise_name": "Plank", "source": "whatever" },
+      { "exercise_name": "Reverse Crunch", "source": "whatever" },
+      { "exercise_name": "Bicycle Crunch", "source": "whatever" },
+      { "exercise_name": "Mountain Climbers", "source": "whatever" },
+      { "exercise_name": "Hanging Knee Raise", "source": "whatever" },
+      { "exercise_name": "Russian Twist", "source": "whatever" }
+    ]
+  }
+]
