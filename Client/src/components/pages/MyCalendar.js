@@ -1,7 +1,6 @@
 import React from 'react';
-import { Eventcalendar, snackbar, setOptions, Popup, Button, Input, Textarea, Switch, Datepicker, SegmentedGroup, SegmentedItem } from '@mobiscroll/react';
-import "@mobiscroll/react/dist/css/mobiscroll.min.css"
-
+// import { Eventcalendar, snackbar, setOptions, Popup, Button, Input, Textarea, Switch, Datepicker, SegmentedGroup, SegmentedItem } from '@mobiscroll/react';
+// import "@mobiscroll/react/dist/css/mobiscroll.min.css"
 
 setOptions({
   theme: 'ios',
