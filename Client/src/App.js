@@ -1,20 +1,20 @@
-// import logo from './logo.svg';
-// import './App.css';
+import logo from './logo.svg';
+import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import {
-//   ApolloClient,
-//   InMemoryCache,
-//   ApolloProvider,
-//   createHttpLink,
-// } from '@apollo/client';
-// import { setContext } from '@apollo/client/link/context';
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  createHttpLink,
+} from '@apollo/client';
+import { setContext } from '@apollo/client/link/context';
 
-import Home from './components/pages/Home';
-import Login from './components/pages/Login';
-import Calendar from './components/pages/Calendar';
-import Food from './components/pages/Food';
-import Workout from './components/pages/Workout';
+import Home from './pages/Home';
+import Login from './pages/Login';
+import MyCalendar from './components/pages/MyCalendar';
+import Food from './pages/Food';
+import Workout from './pages/Workout';
 import HomeContainer from './components/HomeContainer';
 import NavTabs from './components/NavTabs';
 
@@ -22,10 +22,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* <ApolloProvider client={client}> */}
+        <ApolloProvider client={client}>
           <Router>
             <div>
-              <HomeContainer>
+              <Globalstate> 
                 <NavTabs />
                 <Routes>
                   <Route path="/home" element={<Home />} />
@@ -35,21 +35,13 @@ function App() {
                   <Route path="/food/:id" element={<Food />} />
                   <Route path="*" element={<NoMatch />} />
                 </Routes>
-              </HomeContainer>
+              </Globalstate>
             </div>
           </Router>
-        {/* </ApolloProvider> */}
+        </ApolloProvider>
       </header>
     </div>
   );
 }
 
 export default App;
-
-
-// import React from "react";
-// import Homepage from "./components/HomeContainer";
-
-// const App = () => <HomeContainer />;
-
-// export default App;
