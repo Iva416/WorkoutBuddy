@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+// import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import {
@@ -10,13 +10,18 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
-import Home from './pages/Home';
-import Login from './pages/Login';
-import MyCalendar from './components/pages/MyCalendar';
-import Food from './pages/Food';
-import Workout from './pages/Workout';
+import Home from './components/pages/Home';
+import Login from './components/pages/Login';
+// import MyCalendar from './components/pages/MyCalendar';
+import Food from './components/pages/Food';
+import Workout from './components/pages/Workout';
 import HomeContainer from './components/HomeContainer';
 import NavTabs from './components/NavTabs';
+
+const client = new ApolloClient({
+  uri: '/graphql',
+  cache: new InMemoryCache(),
+});
 
 function App() {
   return (
@@ -25,17 +30,15 @@ function App() {
         <ApolloProvider client={client}>
           <Router>
             <div>
-              <Globalstate> 
                 <NavTabs />
                 <Routes>
-                  <Route path="/home" element={<Home />} />
-                  <Route path="/login" element={<Login />} />
-                  <Route path="/calendar" element={<Calendar />} />
+                  <Route path="/" element={<Home />} />
+                  {/* <Route path="/login" element={<Login />} /> */}
+                  {/* <Route path="/calendar" element={<Calendar />} /> */}
                   <Route path="/workout" element={<Workout />} />
-                  <Route path="/food/:id" element={<Food />} />
-                  <Route path="*" element={<NoMatch />} />
+                  <Route path="/food" element={<Food />} />
+                  {/* <Route path="*" element={<NoMatch />} /> */}
                 </Routes>
-              </Globalstate>
             </div>
           </Router>
         </ApolloProvider>

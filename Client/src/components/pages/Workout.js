@@ -14,6 +14,8 @@ export default function Workout() {
   const { loading, data } = useQuery(QUERY_EXERCISES);
   const [exercises, setExercises] = useState([]);
 
+  const exerciseData = data || [];
+
   const handleChange = (event) => {
     const muscle_group = event.target.value;
 
@@ -57,7 +59,7 @@ export default function Workout() {
       <h1>Workouts</h1>
       <label>Which muscle group are you targeting?</label>
       <select name="exercises" onChange={handleChange}>
-        {data.map((exercise) => {
+        {exerciseData.map((exercise) => {
           return (
             <option value={exercise.muscle_group}>
               {exercise.muscle_group}
