@@ -19,18 +19,7 @@ const typeDefs = gql`
     name: String!
     minlength: Int
     _id: ID
-  }
-
-  type Workout:  {
-    name: String!
-    minlength: Int
-    maxlength: Int
-  }
-
-
-
-  
-  
+  }  
 `;
 
 module.exports = typeDefs;
