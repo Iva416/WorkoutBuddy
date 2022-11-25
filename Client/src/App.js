@@ -15,8 +15,8 @@ import Login from './pages/Login';
 import Calendar from './pages/Calendar';
 import Food from './pages/Food';
 import Workout from './pages/Workout';
-import { HomeContainer } from './utils/HomeContainer';
-import HomeContainer from './components/HomeContainer';
+// import { HomeContainer } from './utils/HomeContainer';
+// import HomeContainer from './components/HomeContainer';
 import NavTabs from './components/NavTabs';
 
 function App() {

@@ -4,39 +4,48 @@ import { useQuery } from '@apollo/client';
 
 import { QUERY_FOOD } from '../utils/queries';
 
+const foodList = ({}) => {
+  if (!food.length) {
+    return <h3>No exercise selected</h3>;
+  }
+};
+
 export default function Food() {
   const { loading, data } = useQuery(QUERY_FOOD);
   const [food, setFood] = useState([]);
 
-  const handleChange = (event) => {
-    const { food_name } = event.target.value;
+  var foodList;
 
-    if (food.food_name === 'Asain') {
-      foodList = data.find((food) => {
-        food.food_name === 'Asain';
+  const handleChange = (event) => {
+    const { cusine_name } = event.target.value;
+
+    if (cusine_name === 'Asain') {
+      foodList = data.find((meal) => {
+        meal.cusine_name === 'Asain';
       });
       setFood(foodList.food);
-    } else if (food.food_name === 'Mexican') {
-      foodList = data.find((food) => {
-        food.food_name === 'Mexican';
+    } else if (cusine_name === 'Mexican') {
+      foodList = data.find((meal) => {
+        meal.cusine_name === 'Mexican';
       });
       setFood(foodList.food);
-    } else if (food.food_name === 'Indian') {
-      foodList = data.find((food) => {
-        food.food_name === 'Indian';
+    } else if (cusine_name === 'Carribean') {
+      foodList = data.find((meal) => {
+        meal.cusine_name === 'Carribean';
       });
       setFood(foodList.food);
-    } else if (food.food_name === 'Carribean') {
-      foodList = data.find((food) => {
-        food.food_name === 'Carribean';
+    } else if (cusine_name === 'Italian') {
+      foodList = data.find((meal) => {
+        meal.cusine_name === 'Italian';
       });
       setFood(foodList.food);
-    } else if (food.food_name === 'African') {
-      foodList = data.find((food) => {
-        food.food_name === 'European';
+    } else if (cusine_name === 'European') {
+      foodList = data.find((meal) => {
+        meal.cusine_name === 'European';
       });
       setFood(foodList.food);
     }
+    setFood(foodList.food);
   };
 }
 
@@ -46,7 +55,7 @@ return (
     <label>Which type of cuisine would you like?</label>
     <select name="food" onChange={handleChange}>
       {data.map((food) => {
-        return <option value={food.muscle_group}>{food.muscle_group}</option>;
+        return <option value={food.cusine_name}>{food.cusine_name}</option>;
       })}
     </select>
     <ul>
@@ -59,6 +68,7 @@ return (
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
               src={food.source}
+              title={food.food_name}
             ></iframe>
           </div>
         );
