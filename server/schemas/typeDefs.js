@@ -7,7 +7,7 @@ const typeDefs = gql`
     maxlength: Int
   }
 
-  type Workout  {
+  type Workout {
     name: String!
     minlength: Int
     maxlength: Int
@@ -18,7 +18,7 @@ const typeDefs = gql`
   type User {
     name: String!
     minlength: Int
-  }  
+  }
 `;
 
 module.exports = typeDefs;

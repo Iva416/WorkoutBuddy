@@ -12,6 +12,7 @@ export const QUERY_EXERCISES = gql`
 export const QUERY_FOOD = gql`
   {
     food {
+      cuisine_name
       food_name
     }
   }

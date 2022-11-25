@@ -8,7 +8,6 @@ function NavTabs({ currentPage, handlePageChange }) {
         <a
           href="/"
           onClick={() => handlePageChange('Home')}
-
           className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
         >
           Home
@@ -18,16 +17,21 @@ function NavTabs({ currentPage, handlePageChange }) {
         <a
           href="#calendar"
           onClick={() => handlePageChange('Calendar')}
-
-          className={currentPage === 'Calendar' ? 'nav-link active' : 'nav-link'}
+          className={
+            currentPage === 'Calendar' ? 'nav-link active' : 'nav-link'
+          }
         >
           Calendar
         </a>
       </li> */}
       <li className="nav-item">
         <a
+<<<<<<< HEAD
+          href="#workout"
+=======
           href="/workout"
 
+>>>>>>> 62c521910a59417d90bc9331b4d4e11f1ae4bea2
           onClick={() => handlePageChange('Workout')}
           className={currentPage === 'Workout' ? 'nav-link active' : 'nav-link'}
         >
@@ -38,7 +42,6 @@ function NavTabs({ currentPage, handlePageChange }) {
         <a
           href="/food"
           onClick={() => handlePageChange('Food')}
-
           className={currentPage === 'Food' ? 'nav-link active' : 'nav-link'}
         >
           Food
