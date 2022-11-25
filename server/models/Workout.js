@@ -3,15 +3,18 @@ const { Schema, model } = require('mongoose');
 const exerciseSchema = new Schema({
   exercise_name: {
     type: String,
-    minlength: 1,
-    maxlength: 50,
-    trim: true,
+    required: true,
   },
   muscle_group: {
     type: String,
-    minlength: 1,
-    maxlength: 50,
-    trim: true,
+    required: true,
+  },
+  description: {
+    type: String,
+  },
+  time: {
+    type: Date,
+    default: Date.now,
   },
 });
 

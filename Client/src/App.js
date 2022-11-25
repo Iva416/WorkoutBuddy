@@ -12,7 +12,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // import Home from './pages/Home';
 // import Login from './pages/Login';
-import Calendar from './components/pages/Calendar';
+import MyCalendar from './components/pages/MyCalendar';
 // import Food from './pages/Food';
 // import Workout from './pages/Workout';
 // import { HomeContainer } from './utils/HomeContainer';
@@ -31,7 +31,7 @@ function App() {
                 <Routes>
                   {/* <Route path="/home" element={<Home />} />
                   <Route path="/login" element={<Login />} /> */}
-                  <Route path="/calendar" element={<Calendar />} />
+                  <Route path="/calendar" element={<MyCalendar />} />
                   {/* <Route path="/workout" element={<Workout />} />
                   <Route path="/orderHistory" element={<orderHistory />} />
                   <Route path="/food/:id" element={<Food />} />
@@ -47,3 +47,11 @@ function App() {
 }
 
 export default App;
+
+
+// import React from "react";
+// import Homepage from "./components/HomeContainer";
+
+// const App = () => <HomeContainer />;
+
+// export default App;

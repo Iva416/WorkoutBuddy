@@ -24,9 +24,7 @@ const userSchema = new Schema({
     required: true,
     minlength: 5,
   },
-
 });
-
 
 userSchema.pre('save', async function (next) {
   if (this.isNew || this.isModified('password')) {
@@ -36,7 +34,6 @@ userSchema.pre('save', async function (next) {
 
   next();
 });
-
 
 userSchema.methods.isCorrectPassword = async function (password) {
   await bcrypt.compare(password, this.password);
