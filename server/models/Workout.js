@@ -1,10 +1,12 @@
 const { Schema, model } = require('mongoose');
 
 const exerciseSchema = new Schema({
-  exercise_name: {
-    type: String,
-    required: true,
-  },
+  exercises: [
+    {
+      exercise_name: String,
+      source: String,
+    },
+  ],
   muscle_group: {
     type: String,
     required: true,
@@ -18,6 +20,6 @@ const exerciseSchema = new Schema({
   },
 });
 
-const Exercise = model('Exercise', exerciseSchema);
+const Workout = model('Workout', exerciseSchema);
 
-module.exports = Exercise;
+module.exports = Workout;

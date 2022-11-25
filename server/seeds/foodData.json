@@ -1,18 +1,18 @@
 [
   {
-    "cusine_name": "Asain",
+    "cuisine_name": "Asian",
     "food": [
       { "food_name": "Stirfry", "source": "whatever" },
       { "food_name": "Shrimp Pad Thai", "source": "whatever" },
       { "food_name": "Sesame Chicken", "source": "whatever" },
       { "food_name": "Chicken Chow Mein", "source": "whatever" },
-      { "food_name": "Asain Salad", "source": "whatever" },
+      { "food_name": "Asian Salad", "source": "whatever" },
       { "food_name": "Sweet and Sour Chicken", "source": "whatever" },
       { "food_name": "Salmon", "source": "whatever" }
     ]
   },
   {
-    "cusine_name": "Mexican",
+    "cuisine_name": "Mexican",
     "food": [
       { "food_name": "Burrito Zucchini", "source": "whatever" },
       { "food_name": "Turkey Taco Lettuce Wraps", "source": "whatever" },
@@ -24,7 +24,7 @@
     ]
   },
   {
-    "cusine_name": "Carribean",
+    "cuisine_name": "Carribean",
     "food": [
       { "food_name": "Jerk Chicken", "source": "whatever" },
       { "food_name": "Oxtail", "source": "whatever" },
@@ -35,7 +35,7 @@
     ]
   },
   {
-    "cusine_name": "Italian",
+    "cuisine_name": "Italian",
     "food": [
       { "food_name": "Eggplant Parimigana", "source": "whatever" },
       { "food_name": "Cheese Ravioli", "source": "whatever" },
@@ -47,7 +47,7 @@
     ]
   },
   {
-    "cusine_name": "European",
+    "cuisine_name": "European",
     "food": [
       { "food_name": "Cabbage Rolls", "source": "whatever" },
       { "food_name": "Porkmeatballs and Mashpotato", "source": "whatever" },
