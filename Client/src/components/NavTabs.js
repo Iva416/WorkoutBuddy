@@ -6,28 +6,32 @@ function NavTabs({ currentPage, handlePageChange }) {
     <ul className="nav nav-tabs justify-content-center">
       <li className="nav-item">
         <a
-          href="#home"
+          href="/"
           onClick={() => handlePageChange('Home')}
-
           className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
         >
-          About Me
+          Home
         </a>
       </li>
-      <li className="nav-item">
+      {/* <li className="nav-item">
         <a
           href="#calendar"
           onClick={() => handlePageChange('Calendar')}
-
-          className={currentPage === 'Calendar' ? 'nav-link active' : 'nav-link'}
+          className={
+            currentPage === 'Calendar' ? 'nav-link active' : 'nav-link'
+          }
         >
           Calendar
         </a>
-      </li>
+      </li> */}
       <li className="nav-item">
         <a
+<<<<<<< HEAD
           href="#workout"
+=======
+          href="/workout"
 
+>>>>>>> 62c521910a59417d90bc9331b4d4e11f1ae4bea2
           onClick={() => handlePageChange('Workout')}
           className={currentPage === 'Workout' ? 'nav-link active' : 'nav-link'}
         >
@@ -36,9 +40,8 @@ function NavTabs({ currentPage, handlePageChange }) {
       </li>
       <li className="nav-item">
         <a
-          href="#food"
+          href="/food"
           onClick={() => handlePageChange('Food')}
-
           className={currentPage === 'Food' ? 'nav-link active' : 'nav-link'}
         >
           Food

@@ -1,18 +1,15 @@
 const { Schema, model } = require('mongoose');
 
 const foodSchema = new Schema({
-  Recipe: {
-    type: String,
-    minlength: 1,
-    maxlength: 50,
+  food: {
+    cuisine_name: String,
+    food_name: String,
   },
-  Link: {
+  source: {
     type: String,
-    minlength: 1,
-    maxlength: 50,
   },
 });
 
-const Food = mongoose.model('Food', foodSchema);
+const Food = model('Food', foodSchema);
 
 module.exports = Food;

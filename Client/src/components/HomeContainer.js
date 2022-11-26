@@ -4,8 +4,7 @@ import Home from './pages/Home';
 import MyWorkout from './pages/MyWorkout';
 import Workout from './pages/Workout';
 import Food from './pages/Food';
-import './styles/HomeContainer.css';
-
+// import './styles/HomeContainer.css';
 
 export default function HomeContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
@@ -20,14 +19,14 @@ export default function HomeContainer() {
     if (currentPage === 'Workout') {
       return <Workout />;
     }
-    return <Food />;
+    // return <Food />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
     <div className="header">
-      <h1 className="main-h1">Sagiri Ikenaga</h1>
+      <h1 className="main-h1">Workout Buddy</h1>
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
     </div>

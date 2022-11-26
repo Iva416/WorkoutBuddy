@@ -2,24 +2,29 @@ const { gql } = require('apollo-server-express');
 
 const typeDefs = gql`
   type Food {
-    name: String!
-    minlength: Int
-    maxlength: Int
+    cuisine_name: String!
+    food_name: String!
   }
 
-  type Workout:  {
+  type Workout {
+    exercises: [Exercise]
+    description: String
+    time: String
+    muscle_group: String!
+  }
+  type Exercise {
+    exercise_name: String!
+    source: String
+  }
+  type User {
     name: String!
     minlength: Int
-    maxlength: Int
-    description: String!
-    time: Int
   }
 
-  type User: {
-    name: String!
-    minlength: Int
-    _id: ID
-  }  
+  type Query {
+    food: [Food]
+    workout: [Workout]
+  }
 `;
 
 module.exports = typeDefs;
