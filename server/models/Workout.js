@@ -14,10 +14,11 @@ const exerciseSchema = new Schema({
   description: {
     type: String,
   },
-  time: {
-    type: Date,
-    default: Date.now,
-  },
+  reps: {
+    type: Number,
+    required: true
+},
+  timestamps: true,
 });
 
 const Workout = model('Workout', exerciseSchema);
