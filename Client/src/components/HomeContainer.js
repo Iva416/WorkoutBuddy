@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import NavTabs from './NavTabs';
 import Home from './pages/Home';
-import MyCalendar from './pages/MyCalendar';
+import MyWorkout from './pages/MyWorkout';
 import Workout from './pages/Workout';
 import Food from './pages/Food';
 import './styles/HomeContainer.css';
@@ -15,7 +15,7 @@ export default function HomeContainer() {
       return <Home />;
     }
     if (currentPage === 'Calendar') {
-      return <MyCalendar />;
+      return <MyWorkout />;
     }
     if (currentPage === 'Workout') {
       return <Workout />;
