@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 // import "../styles/WorkoutPage.css"; //change path
 import { useQuery } from '@apollo/client';
 
@@ -13,9 +13,11 @@ import { QUERY_EXERCISES } from '../../utils/queries';
 export default function Workout() {
   const { loading, data } = useQuery(QUERY_EXERCISES);
   const [exercises, setExercises] = useState([]);
-
+  console.log(data)
   const exerciseData = data?.workout || [];
-
+  useEffect(()=> {
+    console.log(data);
+  }, [])
   const handleChange = (event) => {
     const muscle_group = event.target.value;
 

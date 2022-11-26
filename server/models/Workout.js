@@ -16,9 +16,12 @@ const exerciseSchema = new Schema({
   },
   reps: {
     type: Number,
-    required: true
-},
-  timestamps: true,
+    required: false
+  },
+  date: {
+     type: Date, 
+     required: false },
+  // timestamps: true,
 });
 
 const Workout = model('Workout', exerciseSchema);

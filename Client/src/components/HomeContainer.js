@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import NavTabs from './NavTabs';
+// import Header from './components/Header';
 import Home from './pages/Home';
 import MyWorkout from './pages/MyWorkout';
 import Workout from './pages/Workout';
 import Food from './pages/Food';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 // import './styles/HomeContainer.css';
 
 export default function HomeContainer() {
@@ -13,7 +16,13 @@ export default function HomeContainer() {
     if (currentPage === 'Home') {
       return <Home />;
     }
-    if (currentPage === 'Calendar') {
+    if (currentPage === 'Home') {
+      return <Login />;
+    }
+    if (currentPage === 'Home') {
+      return <Signup />;
+    }
+    if (currentPage === 'MyWorkout') {
       return <MyWorkout />;
     }
     if (currentPage === 'Workout') {
@@ -28,6 +37,7 @@ export default function HomeContainer() {
     <div className="header">
       <h1 className="main-h1">Workout Buddy</h1>
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+      {/* <Header /> */}
       {renderPage()}
     </div>
   );

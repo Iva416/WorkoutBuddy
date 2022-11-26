@@ -7,16 +7,16 @@ export default class CreateExercise extends Component {
   constructor(props) {
     super(props);
 
-    this.onChangeUsername = this.onChangeUsername.bind(this);
+    this.onChangeName = this.onChangeName.bind(this);
     this.onChangeDescription = this.onChangeDescription.bind(this);
-    this.onChangeDuration = this.onChangeDuration.bind(this);
+    this.onChangeReps = this.onChangeReps.bind(this);
     this.onChangeDate = this.onChangeDate.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
 
     this.state = {
-      username: '',
+      name: '',
       description: '',
-      duration: 0,
+      reps: 0,
       date: new Date(),
       users: []
     }
@@ -27,8 +27,8 @@ export default class CreateExercise extends Component {
       .then(response => {
         if (response.data.length > 0) {
           this.setState({
-            users: response.data.map(user => user.username),
-            username: response.data[0].username
+            users: response.data.map(user => user.name),
+            name: response.data[0].name
           })
         }
       })
@@ -38,9 +38,9 @@ export default class CreateExercise extends Component {
 
   }
 
-  onChangeUsername(e) {
+  onChangeName(e) {
     this.setState({
-      username: e.target.value
+      name: e.target.value
     })
   }
 
@@ -50,9 +50,9 @@ export default class CreateExercise extends Component {
     })
   }
 
-  onChangeDuration(e) {
+  onChangeReps(e) {
     this.setState({
-      duration: e.target.value
+      reps: e.target.value
     })
   }
 
@@ -66,9 +66,9 @@ export default class CreateExercise extends Component {
     e.preventDefault();
 
     const exercise = {
-      username: this.state.username,
+      name: this.state.name,
       description: this.state.description,
-      duration: this.state.duration,
+      reps: this.state.reps,
       date: this.state.date
     }
 
@@ -86,12 +86,12 @@ export default class CreateExercise extends Component {
       <h3>Create New Exercise Log</h3>
       <form onSubmit={this.onSubmit}>
         <div className="form-group"> 
-          <label>Username: </label>
-          <select ref="userInput"
+          <label>Exercise: </label>
+          {/* <select name="exercise"
               required
               className="form-control"
-              value={this.state.username}
-              onChange={this.onChangeUsername}>
+              value={this.state.exercise}
+              onChange={this.onChangeName}>
               {
                 this.state.users.map(function(user) {
                   return <option 
@@ -100,7 +100,7 @@ export default class CreateExercise extends Component {
                     </option>;
                 })
               }
-          </select>
+          </select> */}
         </div>
         <div className="form-group"> 
           <label>Description: </label>
@@ -112,12 +112,12 @@ export default class CreateExercise extends Component {
               />
         </div>
         <div className="form-group">
-          <label>Duration (in minutes): </label>
+          <label>Repetitions:  </label>
           <input 
               type="text" 
               className="form-control"
-              value={this.state.duration}
-              onChange={this.onChangeDuration}
+              value={this.state.reps}
+              onChange={this.onChangeReps}
               />
         </div>
         <div className="form-group">
