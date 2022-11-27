@@ -15,10 +15,14 @@ export const QUERY_EXERCISES = gql`
 `;
 
 export const QUERY_FOOD = gql`
-  {
+  query Food {
     food {
+      foods {
+        food_name
+        source
+      }
       cuisine_name
-      food_name
+      description
     }
   }
 `;

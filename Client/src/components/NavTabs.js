@@ -3,7 +3,7 @@ import React from 'react';
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <ul className="nav nav-tabs justify-content-center">
+    <ul className="nav nav-tabs">
       <li className="nav-item">
         <a
           href="/"
@@ -27,7 +27,6 @@ function NavTabs({ currentPage, handlePageChange }) {
       <li className="nav-item">
         <a
           href="/workout"
-
           onClick={() => handlePageChange('Workout')}
           className={currentPage === 'Workout' ? 'nav-link active' : 'nav-link'}
         >

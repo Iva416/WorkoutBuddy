@@ -1,7 +1,7 @@
 [
   {
     "cuisine_name": "Asian",
-    "food": [
+    "foods": [
       { "food_name": "Stirfry", "source": "whatever" },
       { "food_name": "Shrimp Pad Thai", "source": "whatever" },
       { "food_name": "Sesame Chicken", "source": "whatever" },
@@ -13,19 +13,40 @@
   },
   {
     "cuisine_name": "Mexican",
-    "food": [
-      { "food_name": "Burrito Zucchini", "source": "whatever" },
-      { "food_name": "Turkey Taco Lettuce Wraps", "source": "whatever" },
-      { "food_name": "Salsa Verde and Shrimp", "source": "whatever" },
-      { "food_name": "Burrito Bowl", "source": "whatever" },
-      { "food_name": "Chicken Fajitas", "source": "whatever" },
-      { "food_name": "Taco Salad", "source": "whatever" },
-      { "food_name": "Turkey Taco Lettuce Cups", "source": "whatever" }
+    "foods": [
+      {
+        "food_name": "Burrito Zucchini",
+        "source": "https://www.youtube.com/embed/xLX7-symEvQ"
+      },
+      {
+        "food_name": "Turkey Taco Lettuce Wraps",
+        "source": "https://www.youtube.com/embed/xLX7-symEvQ"
+      },
+      {
+        "food_name": "Salsa Verde and Shrimp",
+        "source": "https://www.youtube.com/embed/xLX7-symEvQ"
+      },
+      {
+        "food_name": "Burrito Bowl",
+        "source": "https://www.youtube.com/embed/xLX7-symEvQ"
+      },
+      {
+        "food_name": "Chicken Fajitas",
+        "source": "https://www.youtube.com/embed/xLX7-symEvQ"
+      },
+      {
+        "food_name": "Taco Salad",
+        "source": "https://www.youtube.com/embed/xLX7-symEvQ"
+      },
+      {
+        "food_name": "Turkey Taco Lettuce Cups",
+        "source": "https://www.youtube.com/embed/xLX7-symEvQ"
+      }
     ]
   },
   {
     "cuisine_name": "Carribean",
-    "food": [
+    "foods": [
       { "food_name": "Jerk Chicken", "source": "whatever" },
       { "food_name": "Oxtail", "source": "whatever" },
       { "food_name": "Curry Fish", "source": "whatever" },
@@ -36,7 +57,7 @@
   },
   {
     "cuisine_name": "Italian",
-    "food": [
+    "foods": [
       { "food_name": "Eggplant Parimigana", "source": "whatever" },
       { "food_name": "Cheese Ravioli", "source": "whatever" },
       { "food_name": "Minestrone Soup", "source": "whatever" },
@@ -48,7 +69,7 @@
   },
   {
     "cuisine_name": "European",
-    "food": [
+    "foods": [
       { "food_name": "Cabbage Rolls", "source": "whatever" },
       { "food_name": "Porkmeatballs and Mashpotato", "source": "whatever" },
       { "food_name": "Lamb Steak", "source": "whatever" },
