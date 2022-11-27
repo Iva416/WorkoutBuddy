@@ -16,11 +16,22 @@ ul.exercise-box {
 }
 
 select.muscle-select {
-  background-color: white;
+  background-color: rgb(207, 207, 207);
   margin-left: 5px;
+  font-family: Impact, fantasy;
+  width:auto;
 }
 
 h1#workout-header {
   text-align: center;
   font-family: Impact, fantasy;
+}
+
+label.muscle-label {
+  font-family: Impact, fantasy;
+}
+
+p#motivation-note {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }

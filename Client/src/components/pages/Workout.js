@@ -46,7 +46,7 @@ export default function Workout() {
   return (
     <div>
       {loading ? (
-        <div>loading</div>
+        <div>loading...</div>
       ) : (
         <div>
           <h1 id="workout-header">WORKOUTS</h1>
