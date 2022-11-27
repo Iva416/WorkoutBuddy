@@ -36,7 +36,7 @@ function App() {
                 {/* <Route path="/login" element={<Login />} /> */}
                 {/* <Route path="/calendar" element={<Calendar />} /> */}
                 <Route path="/workout" element={<Workout />} />
-                {/* <Route path="/food" element={<Food />} /> */}
+                <Route path="/food" element={<Food />} />
                 {/* <Route path="*" element={<NoMatch />} /> */}
               </Routes>
             </div>
