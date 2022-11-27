@@ -1,11 +1,17 @@
 const { Schema, model } = require('mongoose');
 
 const foodSchema = new Schema({
-  food: {
-    cuisine_name: String,
-    food_name: String,
+  foods: [
+    {
+      food_name: String,
+      source: String,
+    },
+  ],
+  cuisine_name: {
+    type: String,
+    required: true,
   },
-  source: {
+  description: {
     type: String,
   },
 });

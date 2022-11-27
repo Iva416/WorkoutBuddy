@@ -65,7 +65,10 @@ export default function Workout() {
           <select name="exercise" onChange={handleChange}>
             {exerciseData.map((exercise) => {
               return (
-                <option value={exercise.muscle_group}>
+                <option
+                  key={exercise.muscle_group}
+                  value={exercise.muscle_group}
+                >
                   {exercise.muscle_group}
                 </option>
               );
@@ -74,7 +77,7 @@ export default function Workout() {
           <ul>
             {exercises.map((exercise) => {
               return (
-                <div>
+                <div key={exercise.exercise_name}>
                   <li>{exercise.exercise_name}</li>
                   <iframe
                     width="560"
