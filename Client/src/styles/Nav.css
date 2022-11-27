@@ -1,0 +1,40 @@
+ul.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color:White;
+}
+
+li.nav-item {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  font-family: Impact, fantasy;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+a:active {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+    background-color: #121213;
+    color:white;
+}
