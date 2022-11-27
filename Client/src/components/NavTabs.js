@@ -26,12 +26,8 @@ function NavTabs({ currentPage, handlePageChange }) {
       </li> */}
       <li className="nav-item">
         <a
-<<<<<<< HEAD
-          href="#workout"
-=======
           href="/workout"
 
->>>>>>> 62c521910a59417d90bc9331b4d4e11f1ae4bea2
           onClick={() => handlePageChange('Workout')}
           className={currentPage === 'Workout' ? 'nav-link active' : 'nav-link'}
         >
