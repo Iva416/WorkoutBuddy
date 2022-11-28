@@ -12,9 +12,12 @@ li.nav-item {
   text-decoration: none;
   color: white;
   font-family: Impact, fantasy;
-  background-color: #212126;
+  background-color: #171A21;
   border: 1px solid white;
   border-radius: 15px;
+  padding: 8px;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 a:link {
@@ -38,7 +41,7 @@ a:active {
 }
 
 body {
-    background-color: #2E294E;
+    background-color: #171A21;
     color:white;
 }
 
