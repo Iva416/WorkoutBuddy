@@ -39,7 +39,7 @@ iframe:hover {
 
 select.muscle-select {
   font-family: Impact, fantasy;
-  background-color: #121213;
+  background-color: #171A21;
   border: 1px solid white;
   border-radius: 15px;
   color: white;
@@ -55,7 +55,7 @@ select.muscle-select {
   text-align: center;
   justify-content: center;
   align-items: center;
-  background-color: #212126;
+  background-color: #7A93AC;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 30px;
