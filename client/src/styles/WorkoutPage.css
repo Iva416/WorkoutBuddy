@@ -2,7 +2,7 @@ li.exercise-list {
   font-family: Impact, fantasy;
   list-style: none;
   padding-top: 30px;
-  padding-bottom: 15px;
+  padding-bottom: 1px;
   text-align: center;
   font-size: larger;
   font-weight: bold;
@@ -13,13 +13,6 @@ ul.exercise-box {
     display:flex;
     flex-wrap: wrap;
     flex-direction: column;
-}
-
-select.muscle-select {
-  background-color: rgb(207, 207, 207);
-  margin-left: 5px;
-  font-family: Impact, fantasy;
-  width:auto;
 }
 
 h1#workout-header {
@@ -34,4 +27,53 @@ label.muscle-label {
 p#motivation-note {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+iframe {
+  filter:grayscale(95%);
+}
+
+iframe:hover {
+  filter:brightness(100%);
+}
+
+select.muscle-select {
+  font-family: Impact, fantasy;
+  background-color: #121213;
+  border: 1px solid white;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  max-width: 10%;
+  margin-top: 10px;
+  padding: 8px;
+}
+
+.select-box {
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #212126;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 30px;
+}
+
+p.description {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+p.description,
+p.tutorial-text {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+p.tutorial-text {
+  font-weight: bolder;
+  font-family: Impact, fantasy;
 }

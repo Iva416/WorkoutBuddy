@@ -9,7 +9,6 @@ const typeDefs = gql`
 
   type Workout {
     exercises: [Exercise]
-    description: String
     time: String
     muscle_group: String!
   }
@@ -22,6 +21,7 @@ const typeDefs = gql`
   type Exercise {
     exercise_name: String!
     source: String
+    description: String
   }
   type User {
     name: String!
