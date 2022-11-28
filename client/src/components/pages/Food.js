@@ -42,7 +42,7 @@ export default function Workout() {
         <div>
           <h1 id="workout-header">HEALTHY FOODS</h1>
           <div className="select-box">
-          <label>Which cuisine would you like to eat?</label>
+          <label className="muscle-label">Which cuisine would you like to eat?</label>
           <select className="muscle-select" name="food" onChange={handleChange}>
             {foodData.map((food) => {
               return (
