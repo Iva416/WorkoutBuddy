@@ -2,8 +2,8 @@
   "name": "workout-buddy",
   "version": "1.0.0",
   "engines": {
-    "node": "16.17.1",
-    "npm": ">=6.0.0"
+    "node": "18.x",
+    "npm": "7.x"
   },
   "description": "",
   "main": "server/server.js",
