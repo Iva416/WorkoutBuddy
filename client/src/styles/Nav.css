@@ -1,7 +1,7 @@
 ul.nav-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   color:White;
 }
 
@@ -12,6 +12,9 @@ li.nav-item {
   text-decoration: none;
   color: white;
   font-family: Impact, fantasy;
+  background-color: #212126;
+  border: 1px solid white;
+  border-radius: 15px;
 }
 
 a:link {
@@ -35,6 +38,8 @@ a:active {
 }
 
 body {
-    background-color: #121213;
+    background-color: #2E294E;
     color:white;
 }
+
+
