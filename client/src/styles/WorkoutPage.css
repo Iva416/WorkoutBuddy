@@ -4,7 +4,7 @@ li.exercise-list {
   padding-top: 30px;
   padding-bottom: 1px;
   text-align: center;
-  font-size: larger;
+  font-size: 8px;
   font-weight: bold;
 }
 
@@ -71,8 +71,8 @@ p.description {
 
 p.description,
 p.tutorial-text {
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
 p.tutorial-text {
