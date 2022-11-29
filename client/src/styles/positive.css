@@ -5,6 +5,7 @@ h3 {
   font-size: 3rem;
   color:white;
 }
+
 .positive__container {
 text-align: center;
 }
@@ -13,6 +14,7 @@ text-align: center;
   display:block;
   text-align: center;
 }
+
 .p__login {
   justify-content: center;
   align-items: center;
@@ -20,12 +22,11 @@ text-align: center;
   margin:auto;
   font-family: Impact, fantasy;
 }
+
 .text-container {
   width: 100%;
 }
-.text-input {
 
-}
 .form {
   background: var(--color-bg-v);
   padding: 1.3rem;
@@ -33,6 +34,7 @@ text-align: center;
   border:1px solid transparent;
   transition: var(--transition);
 }
+
 .form-input {
   width: 100%;
   border-radius: 1.5rem;
@@ -42,6 +44,7 @@ text-align: center;
   display: flex;
   margin-top: 1.5rem;
 }
+
 .form textarea {
   width: 100%;
   border-radius: 1.5rem;
@@ -70,3 +73,6 @@ text-align: center;
   }
 }
 
+p#character-count {
+  font-family: Arial, Helvetica, sans-serif;
+}

@@ -41,7 +41,7 @@ function NavTabs({ currentPage, handlePageChange }) {
             currentPage === 'Positive' ? 'nav-link active' : 'nav-link'
           }
         >
-          Positive
+          Positivity
         </a>
       </li>
       <li className="nav-item">

@@ -63,7 +63,7 @@ const PositiveForm = () => {
 
       {Auth.loggedIn() ? (
         <>
-          <p
+          <p id="character-count"
             className={`m-0 ${
               characterCount === 150 || error ? 'text-danger' : ''
             }`}
