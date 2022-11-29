@@ -1,0 +1,72 @@
+h3 {
+  text-align: center;
+  font-family: Impact, fantasy;
+  margin-top: 5rem;
+  font-size: 3rem;
+  color:white;
+}
+.positive__container {
+text-align: center;
+}
+
+.form__container {
+  display:block;
+  text-align: center;
+}
+.p__login {
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  margin:auto;
+  font-family: Impact, fantasy;
+}
+.text-container {
+  width: 100%;
+}
+.text-input {
+
+}
+.form {
+  background: var(--color-bg-v);
+  padding: 1.3rem;
+  border-radius: 2rem;
+  border:1px solid transparent;
+  transition: var(--transition);
+}
+.form-input {
+  width: 100%;
+  border-radius: 1.5rem;
+  height: 3rem;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  display: flex;
+  margin-top: 1.5rem;
+}
+.form textarea {
+  width: 100%;
+  border-radius: 1.5rem;
+  height: 8rem;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.btn__submit {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+ .positive__container {
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .positive__container {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+  }
+}
+
