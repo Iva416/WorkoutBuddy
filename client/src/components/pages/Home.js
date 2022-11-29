@@ -4,7 +4,7 @@ import { useQuery } from '@apollo/client';
 import PositiveList from '../PositiveList';
 import '../../styles/home.css';
 // import PositiveForm from '../pages/Positive';
-import buddy from '../../../assets/images/buddy.png'
+import buddy from '../../images/buddy.png'
 
 import { QUERY_POSITIVES } from '../../utils/queries';
 
