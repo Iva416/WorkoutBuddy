@@ -4,6 +4,7 @@ import { useQuery } from '@apollo/client';
 import PositiveList from '../PositiveList';
 import '../../styles/home.css';
 // import PositiveForm from '../pages/Positive';
+import buddy from '../../../assets/images/buddy.png'
 
 import { QUERY_POSITIVES } from '../../utils/queries';
 
@@ -17,6 +18,7 @@ const Home = () => {
        <div>
       <h1 id="workout-header">WORKOUT BUDDY</h1>
       <p id="motivation-note">HERE FOR YOU ANYTIME!</p>
+      <img src={buddy} className="buddy-img"/>
     </div>
       <div className="flex-row justify-center ">
         {/* <div
