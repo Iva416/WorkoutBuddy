@@ -24,13 +24,39 @@ const typeDefs = gql`
     description: String
   }
   type User {
-    name: String!
-    minlength: Int
+    _id: ID
+    username: String
+    email: String
+    password: String
+    positives: [Positive]!
   }
 
   type Query {
     food: [Food]
     workout: [Workout]
+    users: [User]
+    user(username: String!): User
+    positives(username: String): [Positive]
+    positive(positiveId: ID!): Positive
+  }
+
+  type Auth {
+    token: ID!
+    user: User
+  }
+  type Positive {
+    _id:ID
+    positiveText: String
+    positiveAuthor: String
+    createdAt: String
+  }
+
+  type Mutation {
+    addUser(username: String!, email: String!, password: String!): Auth
+    login(email: String!, password: String!): Auth
+    removeUser(userId: ID!): User
+    addPositive(positiveText: String!, positiveAuthor: String!): Positive
+    removePositive(positiveId: ID!): Positive
   }
 `;
 

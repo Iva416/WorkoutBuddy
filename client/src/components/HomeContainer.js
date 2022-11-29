@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import NavTabs from './NavTabs';
 import Home from './pages/Home';
-// import MyCalendar from './pages/MyCalendar';
+import Positive from './pages/Positive';
 import Workout from './pages/Workout';
 import Food from './pages/Food';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 // import './styles/HomeContainer.css';
 
 export default function HomeContainer() {
@@ -13,9 +15,15 @@ export default function HomeContainer() {
     if (currentPage === 'Home') {
       return <Home />;
     }
-    // if (currentPage === 'MyCalendar') {
-    //   return <MyCalendar />;
-    // }
+    if (currentPage === 'Login') {
+      return <Login />;
+    }
+    if (currentPage === 'Signup') {
+      return <Signup />;
+    }
+    if (currentPage === 'Positive') {
+      return <Positive />;
+    }
     if (currentPage === 'Workout') {
       return <Workout />;
     }

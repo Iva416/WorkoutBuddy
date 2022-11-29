@@ -26,3 +26,28 @@ export const QUERY_FOOD = gql`
     }
   }
 `;
+export const QUERY_USER = gql`
+  query user($username: String!) {
+    user(username: $username) {
+      _id
+      username
+      email
+      positives {
+        _id
+        positiveText
+        createdAt
+      }
+    }
+  }
+`;
+
+export const QUERY_POSITIVES = gql`
+  query getPositives {
+    positives {
+      _id
+      positiveText
+      positiveAuthor
+      createdAt
+    }
+  }
+`;
