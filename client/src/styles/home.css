@@ -36,7 +36,8 @@ label.muscle-label {
   font-family: Impact, fantasy;
 }
 
-p#motivation-note {
+p#motivation-note,
+p#scroll-note {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }

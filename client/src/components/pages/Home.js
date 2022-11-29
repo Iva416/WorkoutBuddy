@@ -18,6 +18,7 @@ const Home = () => {
        <div>
       <h1 id="workout-header">WORKOUT BUDDY</h1>
       <p id="motivation-note">HERE FOR YOU ANYTIME!</p>
+      <p id="scroll-note">SCROLL DOWN FOR SOME MOTIVATION. ☺</p>
       <img src={buddy} className="buddy-img"/>
     </div>
       <div className="flex-row justify-center ">
