@@ -1,4 +1,5 @@
-const { Food, index, User, Workout } = require('../models');
+const { Food, index, User, Workout, Positive} = require('../models');
+const { signToken } = require('../utils/auth');
 
 const resolvers = {
   Query: {
