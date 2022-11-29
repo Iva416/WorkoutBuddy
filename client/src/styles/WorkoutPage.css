@@ -41,7 +41,7 @@ select.muscle-select {
   font-family: Impact, fantasy;
   background-color: #1B2845;
   border: 1px solid white;
-  border-radius: 15px;
+  border-radius:0.4rem;
   color: white;
   text-align: center;
   max-width: 10%;

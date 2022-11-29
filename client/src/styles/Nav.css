@@ -12,12 +12,16 @@ li.nav-item {
   text-decoration: none;
   color: white;
   font-family: Impact, fantasy;
-  background-color: #1B2845;
+  background-color: transparent;
   border: 1px solid white;
-  border-radius: 15px;
+  border-radius:0.4rem;
   padding: 8px;
-  margin-left: 2px;
-  margin-right: 2px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+li.nav-item:hover {
+  background-color: rgb(61, 61, 61);
 }
 
 a:link {
